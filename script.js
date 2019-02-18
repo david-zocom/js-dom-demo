@@ -1,40 +1,26 @@
 console.log('rad 1');
 const data = [
-	{
-		art: 'kakadua',
-		pris: 20
-	},
-	{
-		art: 'häst',
-		pris: 15
-	},
-	{
-		art: 'orm',
-		pris: 500
-	},
-	{
-		art: 'sydöjättemoa',
-		pris: 15000
-	}
+	{ art: 'kakadua', pris: 20 },
+	{ art: 'häst', pris: 15 },
+	{ art: 'orm', pris: 500 },
+	{ art: 'sydöjättemoa', pris: 15000 },
+	{ art: 'Enhörning', pris: 10000000}
 ];
 
-console.log('data:', data);
+
 $(document).ready(function() {
 	renderAnimals();
 })
 
 function renderAnimals() {
-	console.log('renderAnimals');
-	// rensa eventuella gamla element
+	// rensa eventuella gamla elementn
 	// gör om djur-objekten till DOM-element
 	// lägg till alla DOM-element till #animalCards
 	$('#animalCards').html('');
 	let elements = data.map(renderSingleAnimal);
 	elements.forEach(element => {
 		$('#animalCards').append(element);
-		console.log('renderAnimals elements forEach');
 	});
-	console.log('renderAnimals elements:', elements);
 }
 function renderSingleAnimal(animal) {
 	// animal är ett objekt med egenskaperna art och pris.
@@ -46,6 +32,7 @@ function renderSingleAnimal(animal) {
 	// 2. $(html string)
 }
 
+// Ordlista:
 // () - parentes
 // {} - blockparentes, curly braces
 // [] - square brackets, hakparentes

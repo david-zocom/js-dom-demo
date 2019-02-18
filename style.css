@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
-
+/* * { padding: 1em;  margin: 1em;} */
 :root {
   --background-color: #e2ecfa;
   --font: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-  padding: 0 40px;
+  padding: 0 2em;
 }
 
 h1 {
@@ -80,4 +80,7 @@ h1 {
   justify-content: center;
   border-radius: 20px;
   border: 2px solid var(--hover);
+}
+.card.selected {
+	background-color: lime;
 }
