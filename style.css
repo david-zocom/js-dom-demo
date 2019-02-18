@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
 /* * { padding: 1em;  margin: 1em;} */
 :root {
+   /* snizigt <3 */
   --background-color: #e2ecfa;
   --font: 'Roboto', sans-serif;
   --h1: 'Walter Turncoat', cursive;
@@ -79,7 +80,7 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  border: 2px solid var(--hover);
+  border: 2px inset var(--hover);
 }
 .card.selected {
 	background-color: lime;
