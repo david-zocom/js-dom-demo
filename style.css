@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
 
-
 :root {
-  --background-color: #F1Cbb5;
+  --background-color: #e2ecfa;
   --font: 'Roboto', sans-serif;
-  --h1:'Walter Turncoat', cursive;
+  --h1: 'Walter Turncoat', cursive;
   --hover: #BF5C3C;
+  --wrapper: #EAC5FF;
 }
 
 * {
@@ -17,6 +17,8 @@
 body {
   margin: 0;
   background-color: var(--background-color);
+  font-family: var(--font);
+
 }
 
 header {
@@ -43,11 +45,27 @@ h1 {
 .menu li {
   margin-left: 4px;
   border-radius: 15px 15px;
-  border: outset;
+  border: inset 2px;
+  padding:0.2em;
 }
 
 .menu li:hover {
   color: var(--hover);
+}
+.menu img {
+	width: 100px;
+}
+
+.wrapper {
+  border-radius:20px;
+  padding: 20px;
+  background-color: var(--wrapper);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
