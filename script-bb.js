@@ -13,8 +13,7 @@ const AnimalView = Backbone.View.extend({
 		let art = this.model.get('art');
 		let pris = this.model.get('pris');
 		let content = `${art} ... ${pris}kr`;
-		//this.$el.html(`<div class="card">${content}</div>`);
-		$('#animalCards').append(`<div class="card">${content}</div>`);
+		this.$el.html(`<div class="card">${content}</div>`);
 	}
 })
 
@@ -25,7 +24,10 @@ let animalViews = animals.map(
 
 function renderEverything() {
 	$('#animalCards').html('');
-	animalViews.forEach(view => view.render());
+	animalViews.forEach(view => {
+		$('#animalCards').append(view.$el);
+		view.render();
+	});
 }
 
 $(document).ready(function() {
