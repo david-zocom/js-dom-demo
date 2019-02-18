@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Walter+Turncoat');
+
+
+:root {
+  --background-color: #F1Cbb5;
+  --font: 'Roboto', sans-serif;
+  --h1:'Walter Turncoat', cursive;
+  --hover: #BF5C3C;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+h1 {
+  font-family: var(--h1);
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.menu {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-left: 4px;
+  border-radius: 15px 15px;
+  border: outset;
+}
+
+.menu li:hover {
+  color: var(--hover);
+}
+
+.card {
+  padding: 1em;
+  width: 20em;
+  /* height:200px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2px solid var(--hover);
+}
